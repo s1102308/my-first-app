@@ -1,0 +1,16 @@
+.my-container{background-image: linear-gradient(to right, #befcff, white)}
+.my-container{background-image: url("https://funkopops.nl/wp-content/uploads/2015/09/funko-pop-logo.jpg")}
+.my-container{background-repeat: no-repeat}
+.my-container{background-position: top right}
+.my-container{background-size: 200px}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fbfbff;
+  color: black;
+  text-align: center;
+  min-height: 30px;
+}

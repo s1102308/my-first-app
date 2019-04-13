@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-xs-10">
+    <!--<app-shopping-edit></app-shopping-edit>-->
+    <!--<hr>-->
+    <h3>Please select a funko for purchase in the shop!</h3>
+    <ul class="list-group">
+      <a class="list-group-item" style="cursor: pointer" *ngFor="let funko of funkos; let i = index" (click)="onEditFunko(i)">
+        {{funko.name}} - {{funko.price}}
+      </a>
+    </ul>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-8">
+    <h4 *ngIf="confirmance">Are you sure that these are the items you want to buy?</h4>
+    <button class="btn btn-primary" (click)="confirmPurchase()" *ngIf="!confirmance">Purchase</button><button class="btn btn-primary" (click)="confirmPurchase()" *ngIf="confirmance">Purchase</button>
+    <h4 *ngIf="purchaseCompleted">Thank you for your purchase! We shall send the products you have ordered to you shortly.</h4>
+  </div>
+</div>
+<br>

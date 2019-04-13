@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewCollection()">New Collection</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <app-collection-item *ngFor="let collect of collection; let i = index"
+    [col]="collect" [index]="i"></app-collection-item>
+  </div>
+</div>
