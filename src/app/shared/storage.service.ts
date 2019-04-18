@@ -17,14 +17,6 @@ export class StorageService {
   }
 
   getCollections() {
-    // const token = this.authService.getToken();
-    //
-    // this.http.get<Collection[]>('https://funko-winkel.firebaseio.com/collection.json?auth=' + token).map((collections) => {
-    //   for (let collection of collections) {
-    //     if (!collection['funkos']) { collection['funkos'] = []; }
-    // }}).subscribe(
-    //   (response: Response) => {const collections: Collection[] = response.json(); this.collectionService.setCollection(collections); });
-
     this.collectionObservable = this.http.get<Collection[]>('https://funko-winkel.firebaseio.com/collection.json');
     console.log(this.collectionObservable);
   }

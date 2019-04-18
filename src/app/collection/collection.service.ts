@@ -9,9 +9,7 @@ export class CollectionService {
   collectionChanged = new Subject<Collection[]>();
 
   private collection: Collection[] = [
-    new Collection('A test collection', 'This is a test', 'https://pm1.narvii.com/6209/4e9025a8c731ad7a59a3899039125b71f48c9270_hq.jpg', [new Funko('Luffy', 13.99), new Funko('Ace', 14.99)]),
-    // new Collection('A test collection 2', 'This is a test', 'https://pm1.narvii.com/6209/4e9025a8c731ad7a59a3899039125b71f48c9270_hq.jpg', []),
-    // new Collection('A test collection # 3', 'This is a test', 'https://pm1.narvii.com/6209/4e9025a8c731ad7a59a3899039125b71f48c9270_hq.jpg', [])
+    new Collection('Bart', 'This is my personal collection, that I have at home.', 'https://covers.magazinecloner.com/covers/137139.jpg', [new Funko('Monkey D. Luffy', 13.99), new Funko('Roronoa Zoro', 12.99), new Funko('Portgas D. Ace', 14.99), new Funko('Nami', 12.99), new Funko('Vinsmoke Sanji', 14.99), new Funko('Donquixote Doflamingo', 9.99), new Funko('Vanitas', 14.99), new Funko('Ron Weasley Riding Chess Piece', 34.99)]),
 
   ];
 

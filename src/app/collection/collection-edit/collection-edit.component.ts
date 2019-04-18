@@ -21,7 +21,7 @@ export class CollectionEditComponent implements OnInit {
   }
 
   onSubmit() {
-    // const newCollection =  new Collection(this.collectionForm.value['name'], this.collectionForm.value['description'], this.collectionForm.value['image'], this.collectionForm.value['funkos']);
+    const newCollection =  new Collection(this.collectionForm.value['name'], this.collectionForm.value['description'], this.collectionForm.value['image'], this.collectionForm.value['funkos']);
     if (this.editMode) {
       this.service.updateCollection(this.id, this.collectionForm.value);
     } else {

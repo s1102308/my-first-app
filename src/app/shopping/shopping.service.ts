@@ -6,8 +6,6 @@ export class ShoppingService {
   funkosChanged = new Subject<Funko[]>();
   startedEditing = new Subject<number>();
   private funkos: Funko[] = [
-    // new Funko('Roronoa Zoro', 12.99),
-    // new Funko('Donquixote Doflamingo', 9.99)
   ];
 
   getFunko() {

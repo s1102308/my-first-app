@@ -30,7 +30,9 @@ export class ShoppingComponent implements OnInit, OnDestroy {
     if (this.confirmance) {
       this.confirmance = false;
       this.purchaseCompleted = true;
-      this.funkos = [];
+      while (this.funkos.length > 0) {
+        this.shopService.deleteFunko(0);
+      }
     }
     if (!this.confirmance) {
       if (!this.purchaseCompleted) {

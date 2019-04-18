@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-custom">
   <div class="container-fluid">
     <div class="navbar-header">
       <a routerLink="/" class="navbar-brand">Funko Shop</a>
@@ -19,11 +19,12 @@
         <li class="dropdown" appDropDown *ngIf="isAuthenticated()">
           <a style="cursor: pointer" class="dropdown-toggle" role="button">Manage<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a style="cursor: pointer" (click)="onSaveData()">Save data</a></li>
-            <li><a style="cursor: pointer" (click)="onFetchData()">Fetch data</a></li>
+            <li><a style="cursor: pointer" (click)="onSaveData()">Save collections</a></li>
+            <li><a style="cursor: pointer" (click)="onFetchData()">Load collections</a></li>
           </ul>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+

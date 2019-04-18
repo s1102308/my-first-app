@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnDestroy, OnInit, Output} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Collection} from '../collection.model';
 import {CollectionService} from '../collection.service';
 import {ActivatedRoute, Router} from '@angular/router';
